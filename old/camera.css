@@ -1,0 +1,319 @@
+body {
+    background-color: #fff !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    background-color: #fff !important;
+    padding-block: 20px;
+    margin: auto;
+}
+
+.camera-div {
+    width: 100%;
+    /* background-color: #fff; */
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.imagePreview,
+.camera-video {
+    width: 98% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.camera-icon {
+    font-size: 40px;
+    cursor: pointer;
+    color: #F8E528;
+}
+
+.capture {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.removeImage {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #FF0000;
+    color: #FFF;
+    font-size: 14px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.attd-main-div,
+.attd-sub-div {
+    display: grid;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.attd-div .col-sm-12 {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.attd-div .col-sm-12 label,
+.attd-div .col-sm-12 h6 {
+    margin-bottom: 0 !important;
+}
+
+.attd-content .col-sm-12 .form-control,
+.attd-content .col-sm-12 .form-select,
+.attd-content .table .form-select {
+    border: 1px solid #21242730;
+    background-color: #fff;
+    color: #000;
+    font-weight: 500;
+}
+
+.body-head h4,
+#matchPopup h3 {
+    color: #000;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+#matchPopup img,
+.table td img {
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+.listtable {
+    border: 1px solid #21242730;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+#matchPopup h6,
+.listtable .table thead th {
+    color: #4D4D4D;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.listtable .table tbody td {
+    color: #000;
+    font-weight: 500;
+}
+
+.table-wrapper {
+    width: 100%;
+    max-height: 35vh;
+    overflow-x: scroll;
+}
+
+.table-wrapper::-webkit-scrollbar {
+    width: 0px;
+}
+
+.submitbtn {
+    background-color: #F8E528;
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid #F8E528;
+    padding: 6px 35px;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.submitbtn:hover {
+    background-color: #000;
+    color: #F8E528;
+}
+
+#overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+#overlay {
+    z-index: 10;
+    pointer-events: none;
+}
+
+#addBtn,
+#rejectBtn {
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    padding: 6px 35px;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+#addBtn {
+    background: #28a745;
+    color: #fff;
+}
+
+#rejectBtn {
+    background: #dc3545;
+    color: #fff;
+}
+
+@media screen and (min-width: 1140px) {
+    .main {
+        width: 80%;
+    }
+
+    .camera-div {
+        height: 70vh;
+    }
+
+    .imagePreview,
+    .camera-video {
+        height: 69vh;
+    }
+
+    .attd-main-div,
+    .attd-sub-div {
+        grid-template-columns: repeat(2, 45%);
+    }
+
+    .attd-div .col-sm-12 {
+        grid-template-columns: 48% 4% 48%;
+    }
+
+    #matchPopup h6,
+    .attd-div .col-sm-12 label,
+    .attd-div .col-sm-12 h6,
+    .listtable .table thead th,
+    .listtable .table tbody td {
+        font-size: 14px;
+    }
+
+    .attd-content .col-sm-12 .form-control,
+    .attd-content .col-sm-12 .form-select,
+    .attd-content .table .form-select {
+        font-size: 12px;
+    }
+
+    .dataTables_wrapper {
+        width: 100% !important;
+        overflow: auto;
+    }
+
+}
+
+@media screen and (min-width: 767px) and (max-width: 1140px) {
+    .main {
+        width: 90%;
+    }
+
+    .camera-div {
+        height: 70vh;
+    }
+
+    .imagePreview,
+    .camera-video {
+        height: 69vh;
+    }
+
+    .attd-main-div,
+    .attd-sub-div {
+        grid-template-columns: repeat(2, 45%);
+    }
+
+    .attd-div .col-sm-12 {
+        grid-template-columns: 48% 4% 48%;
+    }
+
+    #matchPopup h6,
+    .attd-div .col-sm-12 label,
+    .attd-div .col-sm-12 h6,
+    .listtable .table thead th,
+    .listtable .table tbody td {
+        font-size: 12px;
+    }
+
+    .attd-content .col-sm-12 .form-control,
+    .attd-content .col-sm-12 .form-select,
+    .attd-content .table .form-select {
+        font-size: 10px;
+    }
+
+    .dataTables_wrapper {
+        width: 100% !important;
+        overflow: auto;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .main {
+        width: 95%;
+    }
+
+    .camera-div {
+        height: 50vh;
+    }
+
+    .imagePreview,
+    .camera-video {
+        height: 49vh;
+    }
+
+    .attd-main-div {
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .attd-sub-div {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .attd-div .col-sm-12 {
+        grid-template-columns: 36% 4% 60%;
+    }
+
+    .attd-div .col-sm-12 label,
+    .attd-div .col-sm-12 h6 {
+        font-size: 10px;
+    }
+
+    #matchPopup h6,
+    .listtable .table thead th,
+    .listtable .table tbody td,
+    .attd-content .col-sm-12 .form-control,
+    .attd-content .col-sm-12 .form-select,
+    .attd-content .table .form-select {
+        font-size: 10px;
+    }
+
+    .dataTables_wrapper {
+        width: 100% !important;
+        overflow: auto;
+    }
+
+}
